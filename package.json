@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/super-shock/Bot---ManyContent/issues"
   },
-  "homepage": "https://github.com/super-shock/Bot---ManyContent#readme"
+  "homepage": "https://github.com/super-shock/Bot---ManyContent#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
