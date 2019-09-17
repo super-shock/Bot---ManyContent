@@ -1,0 +1,19 @@
+{
+  "name": "bot---manycontent",
+  "version": "1.0.0",
+  "description": "O desafio feito pela manycontent",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/super-shock/Bot---ManyContent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/super-shock/Bot---ManyContent/issues"
+  },
+  "homepage": "https://github.com/super-shock/Bot---ManyContent#readme"
+}
