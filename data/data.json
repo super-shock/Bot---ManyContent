@@ -1,0 +1,11 @@
+{
+    "video": {
+        "font": "40px arial",
+        "fontColor": "yelow",
+        "textAlign": "center"
+    },
+    "matrix": {
+        "video": "matrix/Abelhas.mp4",
+        "text": "matrix/texto.txt"
+    }
+}

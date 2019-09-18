@@ -1,16 +1,19 @@
-const textoMandado = require('../robots/texto.json').Texto
+const ph = require('./texto.txt')
 const sentenceBoundaryDetection = require('sbd')
 
 async function robot(content) {
-    await fetchContentFromtexto(content)
+    await textToImage(content)
     breakContentIntoSentences(content)
 
-    async function fetchContentFromtexto(content) {
-        const textoMandado = textoMontado
-        const textoMontado = await textoTratado.pipe(content.searchTerm)
-        const textoFinal = textoMandado.get()
+    async function textToImage(text, output) {
+        ph.writeFileSync(output, imageHandler(text, {
+            
+        }));
+        // const textoMandado = textoMontado
+        // const textoMontado = await textoTratado.pipe(content.searchTerm)
+        // const textoFinal = textoMandado.get()
         
-        content.textContentOriginal = textoFinal.content
+        // content.textContentOriginal = textoFinal.content
 
     }
 
