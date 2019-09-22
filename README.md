@@ -1,2 +1,2 @@
-# Bot---ManyContent
+# Bot-ManyContent
 O desafio feito pela manycontent
