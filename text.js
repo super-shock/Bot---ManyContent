@@ -1,5 +1,8 @@
+// Bot de texto incompleto... faz a busca do texto pedido mas não foi
+// possivel alterar ele para oq foi pedido no desafio
+
 const ph = require('./matrix/texto.json')
-var texto = ph.texto;
+var conteudo = ph.texto;
 const sentenceBoundaryDetection = require('sbd')
 
 // Função assíncrona do robo: INICIO
@@ -11,7 +14,7 @@ async function robot(content) {
     // Função assíncrona da conversão de texto para imagem: INICIO
     // Função imcompleta*
     async function textToImage(text, output) {
-        texto.writeFileSync(output, imageHandler(text, {
+        conteudo.writeFileSync(output, imageHandler(text, {
         }));
     }
     // Função assíncrona da conversão de texto para imagem: FIM
@@ -19,7 +22,7 @@ async function robot(content) {
     // Função de quebrar o conteúdo em sentenças: INICIO
     // Função imcompleta*
     function breakContentIntoSentences(content) {
-        const sentences = sentenceBoundaryDetection.sentences(content.capturaDoTexto)
+        const sentences = sentenceBoundaryDetection.sentences(content.conteudo)
     }
     // Função de quebrar o conteúdo em sentenças: INICIO
 }
