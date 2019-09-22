@@ -1,5 +1,5 @@
 // Bot de texto incompleto... faz a busca do texto pedido mas não foi
-// possivel alterar ele para oq foi pedido no desafio
+// possivel alterar ele para o que foi pedido no desafio
 
 const ph = require('./matrix/texto.json')
 var conteudo = ph.texto;
