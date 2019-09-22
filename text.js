@@ -1,25 +1,27 @@
-const ph = require('./texto.txt')
+const ph = require('./matrix/texto.json')
+var texto = ph.texto;
 const sentenceBoundaryDetection = require('sbd')
 
+// Função assíncrona do robo: INICIO
 async function robot(content) {
     await textToImage(content)
     breakContentIntoSentences(content)
+// Função assíncrona do robo: FIM
 
+    // Função assíncrona da conversão de texto para imagem: INICIO
+    // Função imcompleta*
     async function textToImage(text, output) {
-        ph.writeFileSync(output, imageHandler(text, {
-            
+        texto.writeFileSync(output, imageHandler(text, {
         }));
-        // const textoMandado = textoMontado
-        // const textoMontado = await textoTratado.pipe(content.searchTerm)
-        // const textoFinal = textoMandado.get()
-        
-        // content.textContentOriginal = textoFinal.content
-
     }
+    // Função assíncrona da conversão de texto para imagem: FIM
 
+    // Função de quebrar o conteúdo em sentenças: INICIO
+    // Função imcompleta*
     function breakContentIntoSentences(content) {
         const sentences = sentenceBoundaryDetection.sentences(content.capturaDoTexto)
     }
+    // Função de quebrar o conteúdo em sentenças: INICIO
 }
 
 module.exports = robot
